@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Emilys+Candy');
+
+.brand h1 {
+  font-family: 'Emilys Candy', cursive;
+  color: #ff004a;
+}
+.thumbnail {
+  margin-top: 20px;
+}
+.thumbnail img {
+  max-height: 150px;
+}
+
+.thumbnail .details {
+  color: #70bfba;
+  text-align: justify;
+}
+
+.thumbnail h3 {
+  color: #ff004a;
+  font-family: 'Emilys Candy', cursive;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 15px;
+  color: #ff004a;
+}
