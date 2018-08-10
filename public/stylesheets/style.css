@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Emilys+Candy');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+
+body {
+  font-family: 'Crimson Text', serif;
+}
+
+.navbar-custom {
+  background-color: #70bfba;
+}
 
 .brand h1 {
   font-family: 'Emilys Candy', cursive;
@@ -14,6 +23,7 @@
 .thumbnail .details {
   color: #70bfba;
   text-align: justify;
+  font-size: 20px;
 }
 
 .thumbnail h3 {
@@ -23,6 +33,17 @@
 
 .price {
   font-weight: bold;
-  font-size: 15px;
+  font-size: 18px;
   color: #ff004a;
+}
+
+.btn-primary {
+  background-color: #70bfba;
+  border: transparent;
+  transition: 0.4s;
+  font-size: 16px;
+}
+
+.btn-primary:hover {
+  background-color: #ff004a;
 }
