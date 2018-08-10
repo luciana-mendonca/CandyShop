@@ -46,12 +46,12 @@ var finished = 0;
 for(var i = 0; i < products.length; i++){
   products[i].save(function(err, result) {
     finished++;
-    if (products.length === finished) {
+    if (finished === products.length) {
       exit();
     }
   });
 }
 
-exit = () => {
+function exit() {
   mongoose.disconnect();
 }
