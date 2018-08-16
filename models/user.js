@@ -1,10 +1,10 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-var bcrypt = require(bcrypt-nodejs);
+var bcrypt = require('bcrypt-nodejs');
 
 const userSchema = new Schema ({
-  email: {type: String, required true},
-  password: {type: String, required true}
+  email: {type: String, required: true},
+  password: {type: String, required: true}
 });
 
 //Creating encrypted password
