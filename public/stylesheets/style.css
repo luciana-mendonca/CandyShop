@@ -49,3 +49,9 @@ body {
 .btn-primary:hover {
   background-color: #ff004a;
 }
+
+.alert-danger {
+  background-color: #ff004a;
+  color: #fff;
+  border: transparent;
+}
