@@ -16,4 +16,8 @@ router.get('/', function(req, res, next) {
   });
 });
 
+router.get('/user/signup', fucntion(req, res, next){
+  res.render('user/signup', {csrfToken: req.csrfToken()});
+});
+
 module.exports = router;
