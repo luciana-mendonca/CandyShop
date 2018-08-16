@@ -6,7 +6,7 @@ var Product = require('../models/product');
 router.get('/', function(req, res, next) {
   Product.find(function(err, docs){
     var productChunks = [];
-    chunkSize = 3;
+    chunkSize = 6;
     for (var i = 0; i < docs.length; i += chunkSize) {
         productChunks.push(docs.slice(i, i + chunkSize));
     }
