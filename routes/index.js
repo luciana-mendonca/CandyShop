@@ -5,7 +5,9 @@ var csrf = require('csurf');
 var passport = require('passport');
 var csrfProtection = csrf();
 
+var csrfProtection = csrf();
 router.use(csrfProtection);
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   Product.find(function(err, docs){
@@ -23,7 +25,7 @@ router.get('/user/signup', function(req, res, next){
   res.render('user/signup', {csrfToken: req.csrfToken(), messages: messages, hasErrors: messages.length > 0 });
 });
 
-router.post('/user/signup', passport.authenticate('local-signup', {
+router.post('/user/signup', passport.authenticate('local.signup', {
   successRedirect: '/user/profile',
   failureRedirect: '/user/signup',
   failureFlash: true
