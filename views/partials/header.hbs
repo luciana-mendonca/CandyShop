@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
-  <a class="navbar-brand brand" href="#"><h1>CandyLand</h1></a>
+  <a class="navbar-brand brand" href="/"><h1>CandyLand</h1></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -12,12 +12,12 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           {{#if login}}
-            <a class="dropdown-item" href="#">User Account</a>
+            <a class="dropdown-item" href="/user/profile">User Account</a>
             <hr />
-            <a class="dropdown-item" href="#">Logout</a>
+            <a class="dropdown-item" href="/user/logout">Logout</a>
           {{else}}
-            <a class="dropdown-item" href="#">Sign up</a>
-            <a class="dropdown-item" href="#">Sign in</a>
+            <a class="dropdown-item" href="/user/signup">Sign up</a>
+            <a class="dropdown-item" href="/user/signin">Sign in</a>
           {{/if}}
         </div>
       </li>
