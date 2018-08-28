@@ -55,3 +55,24 @@ body {
   color: #fff;
   border: transparent;
 }
+
+.img-shopping-cart {
+  max-width: 50px;
+}
+
+.list-group {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.list-group button {
+  height: 30px;
+  font-size: 15px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.btn-group {
+  float: right;
+  margin-top: 10px;
+}

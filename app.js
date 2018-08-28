@@ -13,6 +13,7 @@ var MongoStore = require('connect-mongo')(session);
 
 var routes = require('./routes/index');
 var userRoutes = require('./routes/user');
+require('dotenv').load();
 
 var app = express();
 mongoose.connect('mongodb://localhost:27017/shopping');
