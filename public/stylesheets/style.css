@@ -76,3 +76,7 @@ body {
   float: right;
   margin-top: 10px;
 }
+
+.alert-success {
+  background-color: #70bfba;
+}
