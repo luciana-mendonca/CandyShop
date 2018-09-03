@@ -4,19 +4,20 @@
     <hr />
     <h2>My Orders</h2>
     {{#each orders}}
-      <div class="panel panel-default">
-        <div class="panel-body">
+      <div class="card">
+        <div class="card-block">
           <ul class="list-group">
             {{#each this.items}}
               <li class="list-group-item">
-                <span class="badge">€ {{this.price}}</span>
-                {{this.item.title}} | Qty: {{this.qty}}
+                <span class="badge float-right">€ {{this.price}}</span>
+                Qty: {{this.qty}} | {{this.item.title}}
               </li>
             {{/each}}
           </ul>
         </div>
-        <div class="panel-footer">€ {{this.cart.totalPrice}}</div>
+        <div class="card-footer"><strong>Total: € {{this.cart.totalPrice}}</strong></div>
       </div>
+      <br />
     {{/each}}
   </div>
 </div>

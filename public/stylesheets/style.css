@@ -80,3 +80,11 @@ body {
 .alert-success {
   background-color: #70bfba;
 }
+
+.card-footer {
+  background-color: #70bfba;
+}
+
+.card-block {
+  background-image:url('http://res.cloudinary.com/di7m4tijz/image/upload/v1535629547/depositphotos_71134187-stock-photo-mix-of-colorful-sugar-balls_lkzhyv.jpg');
+}
