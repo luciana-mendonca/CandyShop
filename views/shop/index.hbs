@@ -5,8 +5,54 @@
     </div>
   </div>
 </div>
+<div>
+
+<!-- Slide show   -->
+<div class="slideshow-container">
+    <div class="mySlides">
+      <div class="numbertext">1 / 5</div>
+      <img src="http://res.cloudinary.com/di7m4tijz/image/upload/v1531384336/crrbadi9e6s3byzvjiprsuufos8qwbnxcwf8kci3vwiqulsbtyydo6mlhmktqgsj-_jossxv.jpg" style="width:100%">
+    </div>
+    <div>
+
+    </div>
+      <div class="mySlides">
+        <div class="numbertext">2 / 5</div>
+        <img src="http://res.cloudinary.com/di7m4tijz/image/upload/v1536080848/img2_fhjdpx.jpg" style="width:100%">
+      </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 5</div>
+      <img src="http://res.cloudinary.com/di7m4tijz/image/upload/v1536085190/photo-1525079119599-b0eb2c9db6c9_o4jhzq.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 5</div>
+      <img src="https://res.cloudinary.com/di7m4tijz/image/upload/v1536085253/709045_bhs9ix.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 5</div>
+      <img src="https://res.cloudinary.com/di7m4tijz/image/upload/v1536085284/Images-Candy-HD-Wallpapers_f8ulnr.jpg" style="width:100%">
+    </div>
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+  </div>
+</div>
+
+<!-- Products display -->
+
+<div id="products-display" class="section-text">
+  <h2><img src="https://res.cloudinary.com/di7m4tijz/image/upload/v1536089719/original_tarspk.gif" style="width:15%;"/>Featured Products</h2>
+</div>
 {{#each products }}
-  <div class="row">
+  <div class="row products">
     {{#each this}}
       <div class="col-sm-6 col-md-4">
         <div class="thumbnail">
@@ -24,3 +70,26 @@
     {{/each}}
   </div>
 {{/each}}
+
+<!-- Slide show script-->
+<script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+</script>

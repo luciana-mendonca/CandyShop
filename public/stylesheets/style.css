@@ -4,21 +4,62 @@
 body {
   font-family: 'Crimson Text', serif;
   margin-bottom: 50px;
+  background-image: url('http://res.cloudinary.com/di7m4tijz/image/upload/v1536071444/free_digital_scrapbook_paper_download_pink_blue_stripes_nkzkvo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.navbar-custom {
-  background-color: #70bfba;
-}
+/*#bg-video {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+}*/
 
 .brand h1 {
   font-family: 'Emilys Candy', cursive;
   color: #ff004a;
+  font-size: 60px;
 }
+
+.nav-item a {
+  color: #ff004a !important;
+  font-size: 20px;
+}
+
+.dropdown-item:hover {
+  background: #bff0ef;
+}
+
 .thumbnail {
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 30px;
+  padding-bottom: 60px;
+  box-shadow: 5px 5px 20px grey;
+  background-color: #fff;
 }
+
+.section-text h2 {
+  font-family: 'Emilys Candy', cursive;
+  color: #ff004a;
+  font-size: 50px;
+  margin-top: 40px;
+  text-align: left;
+}
+
+.products {
+  margin-top: 40px;
+  padding-bottom: 30px;
+  box-shadow: 5px 5px 20px grey;
+}
+
 .thumbnail img {
-  max-height: 150px;
+  padding-top: 30px;
+  max-height: 160px;
+  width: 100%;
 }
 
 .thumbnail .details {
@@ -44,16 +85,28 @@ body {
   transition: 0.4s;
   font-size: 16px;
   padding: 10px;
+  box-shadow: none !important;
+}
+
+a {
+  color:  #ff004a;
+}
+
+a:hover {
+  color: #70bfba;
 }
 
 .btn-primary:hover {
-  background-color: #ff004a;
+  background-color: #ff004a !important;
+}
+
+.btn-primary:active {
+  color: #70bfba;
 }
 
 .alert-danger {
-  background-color: #ff004a;
-  color: #fff;
-  border: transparent;
+  background-color: #fcdff7;
+  color: #000000;
 }
 
 .img-shopping-cart {
@@ -72,6 +125,19 @@ body {
   padding-bottom: 0px;
 }
 
+.form-group {
+  width: 400px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.form-group input {
+  box-shadow: none !important;
+}
+
+.form-group input:focus {
+  border-color: #ff004a !important;
+}
+
 .btn-group {
   float: right;
   margin-top: 10px;
@@ -79,6 +145,7 @@ body {
 
 .alert-success {
   background-color: #70bfba;
+  border-style: dashed;
 }
 
 .card-footer {
@@ -86,5 +153,64 @@ body {
 }
 
 .card-block {
-  background-image:url('http://res.cloudinary.com/di7m4tijz/image/upload/v1535629547/depositphotos_71134187-stock-photo-mix-of-colorful-sugar-balls_lkzhyv.jpg');
+}
+
+.empty-cart {
+  margin: 0 auto;
+  margin-top: 50px;
+  color: #ff004a;
+  text-align: center;
+}
+
+.empty-cart img {
+  border-radius: 60px;
+}
+
+/* Slide show */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 830px;
+  position: relative;
+  margin: auto;
+  box-shadow: 5px 5px 20px grey;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 14px;
+  width: 14px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #624f9c;
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
 }
