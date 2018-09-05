@@ -9,11 +9,8 @@
             <strong>{{this.item.title}}</strong>
             <span class="label label-success">€ {{this.price}}</span>
             <div class="btn-group">
-              <button class="btn btn-primary btn-xs dropdown-toggle" type="button" data-toggle="dropdown">Action<span class="caret"></span></button>
-              <ul class="dropdown-menu">
-                <li><a href="/reduce/{{this.item._id}}">Remove 1</a></li>
-                <li><a href="/remove/{{this.item._id}}">Remove all</a></li>
-              </ul>
+              <p><a href="/reduce/{{this.item._id}}" class="btn btn-primary btn-xs float-right" role="button">Remove 1</a></p>
+              <p><a href="/remove/{{this.item._id}}" class="btn btn-primary btn-xs float-right" role="button">Remove All</a></p>
             </div>
           </li>
         {{/each}}

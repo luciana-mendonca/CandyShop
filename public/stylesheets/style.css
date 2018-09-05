@@ -50,6 +50,12 @@ body {
   text-align: left;
 }
 
+.wrap {
+  background-color: #fff;
+  box-shadow: 5px 5px 20px grey;
+  padding-bottom: 40px;
+}
+
 .products {
   margin-top: 40px;
   padding-bottom: 30px;
@@ -104,6 +110,9 @@ a:hover {
   color: #70bfba;
 }
 
+.btn-group p {
+  padding: 6px !important;
+}
 .alert-danger {
   background-color: #fcdff7;
   color: #000000;
