@@ -1,11 +1,9 @@
 <div class="row">
   <div class="col-md-8 col-md-offset-2">
-    <h1>My Account</h1>
-    <hr />
-    <h2>My Orders</h2>
+      <h2>My Orders</h2>
+      <hr />
     {{#each orders}}
-      <div class="card">
-        <div class="card-block">
+      <div class="card cart-orders">
           <ul class="list-group">
             {{#each this.items}}
               <li class="list-group-item">
@@ -14,7 +12,6 @@
               </li>
             {{/each}}
           </ul>
-        </div>
         <div class="card-footer"><strong>Total: € {{this.cart.totalPrice}}</strong></div>
       </div>
       <br />
