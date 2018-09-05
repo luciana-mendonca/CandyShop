@@ -3,11 +3,12 @@
         <span class="section-text"><h2>Checkout</h2></span>
           <hr />
           <h3>Your Total: ${{total}}</h3>
+          <br />
         <div id="charge-error" class="alert-danger {{#if noError}}hidden{{/if}}">
           {{errMsg}}
         </div>
         <form action="/checkout" method="post" id="checkout-form">
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-xs-12">
                     <div class="form-group">
                         <label for="name">Name</label>
