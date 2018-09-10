@@ -38,7 +38,7 @@ body {
   font-family: 'Emilys Candy', cursive;
   color: #ff004a;
   font-size: 50px;
-  margin-top: 40px;
+  margin-top: 186px;
   text-align: left;
 }
 
@@ -148,6 +148,7 @@ a:hover {
 .alert-success {
   background-color: #70bfba;
   border-style: dashed;
+  padding-bottom: 30px;
 }
 
 .card-footer {
