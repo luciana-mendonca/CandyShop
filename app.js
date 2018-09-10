@@ -16,7 +16,7 @@ var userRoutes = require('./routes/user');
 require('dotenv').load();
 
 var app = express();
-mongoose.connect('mongodb://localhost:27017/shopping');
+mongoose.connect(process.env.MONGODB_URI);
 require('./config/passport');
 // view engine setup
 app.engine('.hbs', expressHbs({defaultLayout:'layout', extname: '.hbs'}));
